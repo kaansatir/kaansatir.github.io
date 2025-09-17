@@ -1,3 +1,1 @@
 # kaansatir.github.io
-
-laksjdflkasdjfklsadfj
