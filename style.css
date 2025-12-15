@@ -1,0 +1,178 @@
+/* RESET & BASICS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #111;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+    /* Layout */
+    display: flex; 
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- SIDEBAR STYLES --- */
+.sidebar {
+    width: 250px;
+    padding: 50px 25px;
+    flex-shrink: 0;
+    
+    /* Sticky Position */
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-right: 1px solid #f0f0f0;
+
+    /* Flex Layout to push Footer to bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Sidebar Top Section */
+.logo {
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.sidebar-bio {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.sidebar nav a:hover {
+    color: #000;
+}
+
+/* Sidebar Bottom Section (Socials + Footer) */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons svg {
+    width: 100%;
+    height: 100%;
+    fill: #777;
+    transition: fill 0.2s;
+}
+
+.social-icons a:hover svg {
+    fill: #000;
+}
+
+footer {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+/* --- MAIN CONTENT STYLES --- */
+.content {
+    flex-grow: 1;
+    padding: 60px 50px;
+    max-width: 720px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+a {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #555;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 30px 20px;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        gap: 20px;
+    }
+
+    .sidebar-bio {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-bottom {
+        margin-top: 20px;
+    }
+    
+    .content {
+        padding: 30px 20px;
+    }
+}
