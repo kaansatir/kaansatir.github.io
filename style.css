@@ -114,6 +114,12 @@ a{ color: inherit; }
   opacity: .9;
 }
 
+/* Make the IMDb badge readable while keeping the same icon button */
+.icon svg.imdb{
+  width: 26px;
+  height: 18px;
+}
+
 .foot{
   color: var(--faint);
   font-size: 12.5px;
