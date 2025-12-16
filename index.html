@@ -3,229 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kaan Satir — Exercise, nutrition, markets, coding, and building systems." />
   <title>Kaan Satir</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-  <!-- External CSS -->
+  <meta name="description" content="Kaan Satir — Exercise, nutrition, financial markets, coding, prompting." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header class="sidebar" role="banner">
-    <div class="sidebar-top">
-      <div class="logo">Kaan Satir</div>
-      <p class="sidebar-bio">
-        Exercise, Nutrition,<br>
-        Financial markets, Coding,<br>
-        Prompting
-      </p>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="top">
+        <a class="name" href="#">Kaan Satir</a>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-link is-active" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="friends.html">Friends</a>
-        <a class="nav-link" href="mailto:you@example.com">Contact</a>
-      </nav>
+        <p class="bio">
+          Exercise, Nutrition,<br />
+          Financial markets, Coding,<br />
+          Prompting
+        </p>
 
-      <div class="sidebar-cta" aria-hidden="true">
-        <div class="pill">Systems • Strength • Markets</div>
+        <nav class="nav" aria-label="Primary">
+          <a class="navlink is-active" href="#">Home</a>
+          <a class="navlink" href="#about">About</a>
+          <a class="navlink" href="#friends">Friends</a>
+          <a class="navlink" href="#contact">Contact Me</a>
+        </nav>
+
+        <div class="social" aria-label="Social links">
+          <a class="icon" href="#" target="_blank" rel="noreferrer" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a class="icon" href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a class="icon" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <footer class="sidebar-footer">
-      <span>© 2025</span>
-      <span class="dot">•</span>
-      <span>All rights reserved</span>
-    </footer>
-  </header>
+      <footer class="foot">
+        <span>© 2025</span>
+      </footer>
+    </aside>
 
-  <main id="main" class="content" role="main">
-    <section class="intro">
-      <h1>Hey, I’m Kaan.</h1>
-      <p class="lead">
-        I build systems, stress-test assumptions, and ship projects where mind, body, and markets overlap.
-      </p>
-      <p>
-        Interests: how the brain and body work, relationship dynamics, longevity,
-        exploiting market inefficiencies, and the occasional game binge.
-      </p>
+    <main id="main" class="main">
+      <section class="intro">
+        <h1>Hey, I am Kaan.</h1>
+        <p class="lead">I’m into creating projects and learning how systems / the world works.</p>
 
-      <div class="chips" aria-label="Interests">
-        <span class="chip">Training</span>
-        <span class="chip">Nutrition</span>
-        <span class="chip">Quant-ish Thinking</span>
-        <span class="chip">Coding</span>
-        <span class="chip">Prompting</span>
-      </div>
-    </section>
+        <p class="para">
+          My interests span across: <br />
+          how brain &amp; body works <br />
+          relationship dynamics <br />
+          longevity <br />
+          financial markets (and inefficiencies) <br />
+          coding <br />
+          and a few games.
+        </p>
+      </section>
 
-    <section class="work-section">
-      <div class="section-title">
+      <section class="section" id="about">
+        <h2>About</h2>
+        <p class="para">
+          I like building simple tools that do real work: automation, research, and systems that compound.
+          I’m obsessed with feedback loops—measure, iterate, improve.
+        </p>
+      </section>
+
+      <section class="section">
         <h2>Currently</h2>
-        <p class="section-sub">What I’m focused on right now.</p>
-      </div>
+        <ul class="list">
+          <li>
+            <strong>Writing some bots</strong>
+            <span class="sep">—</span>
+            <span class="muted">financial research + automation, and also looking for gold buyers.</span>
+          </li>
+        </ul>
+      </section>
 
-      <ul class="cards" role="list">
-        <li class="card">
-          <div class="card-top">
-            <h3>Automated Bots & Market Research</h3>
-            <span class="tag">In progress</span>
-          </div>
-          <p class="card-desc">
-            Writing bots for financial edge. Also searching for gold buyers (reach out if you know one).
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="work-section">
-      <div class="section-title">
+      <section class="section">
         <h2>Past</h2>
-        <p class="section-sub">Useful context — how I got here.</p>
-      </div>
+        <ul class="list">
+          <li>
+            <strong>TODO</strong>
+            <span class="sep">—</span>
+            <span class="muted">TODO</span>
+          </li>
+        </ul>
 
-      <ul class="cards" role="list">
-        <li class="card">
-          <div class="card-top">
-            <h3>Exploration Phase</h3>
-            <span class="tag">Ongoing</span>
-          </div>
-          <p class="card-desc">Self-directed learning across fitness, psychology, and systems.</p>
-        </li>
-      </ul>
+        <p class="para">
+          Check out my projects <a class="link" href="#">here</a>.
+        </p>
+      </section>
 
-      <p class="projects-link">Selected projects live <a href="#">here</a>.</p>
-    </section>
-  </main>
-</body>
-</html>
+      <section class="section" id="friends">
+        <h2>Friends</h2>
+        <p class="para muted">
+          (Optional) Add a small list of people you respect / collaborate with.
+        </p>
+      </section>
 
-
-<!-- ======================= about.html ======================= -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Kaan Satir." />
-  <title>About — Kaan Satir</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="sidebar" role="banner">
-    <div class="sidebar-top">
-      <div class="logo">Kaan Satir</div>
-
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link is-active" href="about.html">About</a>
-        <a class="nav-link" href="friends.html">Friends</a>
-        <a class="nav-link" href="mailto:you@example.com">Contact</a>
-      </nav>
-
-      <div class="sidebar-cta" aria-hidden="true">
-        <div class="pill">Build → Test → Iterate</div>
-      </div>
-    </div>
-
-    <footer class="sidebar-footer">
-      <span>© 2025</span>
-      <span class="dot">•</span>
-      <span>All rights reserved</span>
-    </footer>
-  </header>
-
-  <main id="main" class="content" role="main">
-    <section class="intro">
-      <h1>About</h1>
-      <p class="lead">Short version: I like clarity, leverage, and clean execution.</p>
-      <p>
-        TODO: Add your story — where you’re from, what you’re building, what you believe.
-        Keep it sharp. 3–6 paragraphs max.
-      </p>
-
-      <div class="callout">
-        <strong>Tip:</strong> Put one concrete proof here (e.g., “built X bot”, “trained for Y goal”, “shipped Z project”).
-      </div>
-    </section>
-  </main>
-</body>
-</html>
-
-
-<!-- ======================= friends.html ======================= -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Friends and people I respect." />
-  <title>Friends — Kaan Satir</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="sidebar" role="banner">
-    <div class="sidebar-top">
-      <div class="logo">Kaan Satir</div>
-
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link is-active" href="friends.html">Friends</a>
-        <a class="nav-link" href="mailto:you@example.com">Contact</a>
-      </nav>
-
-      <div class="sidebar-cta" aria-hidden="true">
-        <div class="pill">People > Platforms</div>
-      </div>
-    </div>
-
-    <footer class="sidebar-footer">
-      <span>© 2025</span>
-      <span class="dot">•</span>
-      <span>All rights reserved</span>
-    </footer>
-  </header>
-
-  <main id="main" class="content" role="main">
-    <section class="intro">
-      <h1>Friends</h1>
-      <p class="lead">People I learn from / build with.</p>
-
-      <ul class="cards" role="list">
-        <li class="card">
-          <div class="card-top">
-            <h3>TODO — Name</h3>
-            <span class="tag">Role</span>
-          </div>
-          <p class="card-desc">A short line about why you respect them + link.</p>
-        </li>
-      </ul>
-    </section>
-  </main>
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p class="para">
+          Email: <a class="link" href="mailto:you@example.com">you@example.com</a>
+        </p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
