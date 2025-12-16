@@ -1,63 +1,231 @@
 <!DOCTYPE html>
-<div class="logo">Kaan Satir</div>
-    <p class="sidebar-bio">
-    Exercise, Nutrition,<br>
-    Financial markets, Coding,<br>
-    Prompting
-    </p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="friends.html">Friends</a>
-        <a href="#">Contact</a>
-    </nav>
-</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kaan Satir — Exercise, nutrition, markets, coding, and building systems." />
+  <title>Kaan Satir</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="sidebar" role="banner">
+    <div class="sidebar-top">
+      <div class="logo">Kaan Satir</div>
+      <p class="sidebar-bio">
+        Exercise, Nutrition,<br>
+        Financial markets, Coding,<br>
+        Prompting
+      </p>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link is-active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="friends.html">Friends</a>
+        <a class="nav-link" href="mailto:you@example.com">Contact</a>
+      </nav>
+
+      <div class="sidebar-cta" aria-hidden="true">
+        <div class="pill">Systems • Strength • Markets</div>
+      </div>
+    </div>
+
+    <footer class="sidebar-footer">
+      <span>© 2025</span>
+      <span class="dot">•</span>
+      <span>All rights reserved</span>
+    </footer>
+  </header>
+
+  <main id="main" class="content" role="main">
+    <section class="intro">
+      <h1>Hey, I’m Kaan.</h1>
+      <p class="lead">
+        I build systems, stress-test assumptions, and ship projects where mind, body, and markets overlap.
+      </p>
+      <p>
+        Interests: how the brain and body work, relationship dynamics, longevity,
+        exploiting market inefficiencies, and the occasional game binge.
+      </p>
+
+      <div class="chips" aria-label="Interests">
+        <span class="chip">Training</span>
+        <span class="chip">Nutrition</span>
+        <span class="chip">Quant-ish Thinking</span>
+        <span class="chip">Coding</span>
+        <span class="chip">Prompting</span>
+      </div>
+    </section>
+
+    <section class="work-section">
+      <div class="section-title">
+        <h2>Currently</h2>
+        <p class="section-sub">What I’m focused on right now.</p>
+      </div>
+
+      <ul class="cards" role="list">
+        <li class="card">
+          <div class="card-top">
+            <h3>Automated Bots & Market Research</h3>
+            <span class="tag">In progress</span>
+          </div>
+          <p class="card-desc">
+            Writing bots for financial edge. Also searching for gold buyers (reach out if you know one).
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="work-section">
+      <div class="section-title">
+        <h2>Past</h2>
+        <p class="section-sub">Useful context — how I got here.</p>
+      </div>
+
+      <ul class="cards" role="list">
+        <li class="card">
+          <div class="card-top">
+            <h3>Exploration Phase</h3>
+            <span class="tag">Ongoing</span>
+          </div>
+          <p class="card-desc">Self-directed learning across fitness, psychology, and systems.</p>
+        </li>
+      </ul>
+
+      <p class="projects-link">Selected projects live <a href="#">here</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
 
 
-<footer>
-© 2025 · All rights reserved
-</footer>
-</header>
+<!-- ======================= about.html ======================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Kaan Satir." />
+  <title>About — Kaan Satir</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="sidebar" role="banner">
+    <div class="sidebar-top">
+      <div class="logo">Kaan Satir</div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link is-active" href="about.html">About</a>
+        <a class="nav-link" href="friends.html">Friends</a>
+        <a class="nav-link" href="mailto:you@example.com">Contact</a>
+      </nav>
+
+      <div class="sidebar-cta" aria-hidden="true">
+        <div class="pill">Build → Test → Iterate</div>
+      </div>
+    </div>
+
+    <footer class="sidebar-footer">
+      <span>© 2025</span>
+      <span class="dot">•</span>
+      <span>All rights reserved</span>
+    </footer>
+  </header>
+
+  <main id="main" class="content" role="main">
+    <section class="intro">
+      <h1>About</h1>
+      <p class="lead">Short version: I like clarity, leverage, and clean execution.</p>
+      <p>
+        TODO: Add your story — where you’re from, what you’re building, what you believe.
+        Keep it sharp. 3–6 paragraphs max.
+      </p>
+
+      <div class="callout">
+        <strong>Tip:</strong> Put one concrete proof here (e.g., “built X bot”, “trained for Y goal”, “shipped Z project”).
+      </div>
+    </section>
+  </main>
+</body>
+</html>
 
 
-<main class="content">
-<section class="intro">
-<h1>Hey, I’m Kaan.</h1>
-<p>
-I like building systems, breaking them, and rebuilding them better.
-</p>
-<p>
-Interests include how the brain and body work, relationship dynamics,
-longevity, exploiting market inefficiencies, and the occasional game binge.
-</p>
-</section>
+<!-- ======================= friends.html ======================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Friends and people I respect." />
+  <title>Friends — Kaan Satir</title>
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
-<section class="work-section">
-<h3>Currently</h3>
-<ul>
-<li>
-<strong>Automated Bots & Market Research</strong>
-<span class="description">
-Writing bots for financial edge. Also searching for gold buyers (reach out if you know one).
-</span>
-</li>
-</ul>
-</section>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="sidebar" role="banner">
+    <div class="sidebar-top">
+      <div class="logo">Kaan Satir</div>
 
-<section class="work-section">
-<h3>Past</h3>
-<ul>
-<li>
-<strong>Exploration Phase</strong>
-<span class="description">Self-directed learning across fitness, psychology, and systems.</span>
-</li>
-</ul>
-<p class="projects-link">Projects live <a href="#">here</a>.</p>
-</section>
-</main>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link is-active" href="friends.html">Friends</a>
+        <a class="nav-link" href="mailto:you@example.com">Contact</a>
+      </nav>
 
+      <div class="sidebar-cta" aria-hidden="true">
+        <div class="pill">People > Platforms</div>
+      </div>
+    </div>
 
+    <footer class="sidebar-footer">
+      <span>© 2025</span>
+      <span class="dot">•</span>
+      <span>All rights reserved</span>
+    </footer>
+  </header>
+
+  <main id="main" class="content" role="main">
+    <section class="intro">
+      <h1>Friends</h1>
+      <p class="lead">People I learn from / build with.</p>
+
+      <ul class="cards" role="list">
+        <li class="card">
+          <div class="card-top">
+            <h3>TODO — Name</h3>
+            <span class="tag">Role</span>
+          </div>
+          <p class="card-desc">A short line about why you respect them + link.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
